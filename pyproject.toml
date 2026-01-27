@@ -1,0 +1,33 @@
+[project]
+name = "interactive-data-viz"
+version = "0.1.0"
+description = "Interactive data visualization + cleaning pipeline + algorithm visualizer."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "matplotlib>=3.9",
+  "mplcursors>=0.5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "black>=24.0",
+]
+
+[project.scripts]
+interactive-data-viz = "interactive_data_viz.main:main"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
