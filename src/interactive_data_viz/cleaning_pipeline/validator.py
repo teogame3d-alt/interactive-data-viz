@@ -1,11 +1,18 @@
 from __future__ import annotations
 
+"""RO: Validarea schemelor pe baza unui contract de date.
+EN: Schema validation based on a data contract.
+"""
+
 from dataclasses import dataclass
 import pandas as pd
 
 
 @dataclass(frozen=True)
 class DataContract:
+    """RO: Defineste coloane, tipuri si intervale permise.
+    EN: Defines columns, types, and allowed ranges.
+    """
     required_columns: tuple[str, ...]
     numeric_columns: tuple[str, ...]
     categorical_columns: tuple[str, ...]
@@ -13,6 +20,9 @@ class DataContract:
 
 
 def validate_schema(df: pd.DataFrame, contract: DataContract) -> list[str]:
+    """RO: Returneaza lista de erori de schema (gol = ok).
+    EN: Return a list of schema errors (empty = ok).
+    """
     errors: list[str] = []
     for col in contract.required_columns:
         if col not in df.columns:

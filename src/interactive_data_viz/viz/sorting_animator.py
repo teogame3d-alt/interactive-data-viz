@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+"""RO: Animatie interactiva pentru bubble sort.
+EN: Interactive animation for bubble sort.
+"""
+
 import random
 
 import matplotlib.pyplot as plt
@@ -11,7 +15,13 @@ from ..algorithms.sorting import bubble_sort
 
 
 class SortingAnimator:
+    """RO: UI Matplotlib cu slider de viteza si buton randomize.
+    EN: Matplotlib UI with speed slider and randomize button.
+    """
     def __init__(self, size: int = 30):
+        """RO: Pregateste datele, animatia si controalele.
+        EN: Prepare data, animation, and controls.
+        """
         self.size = size
         self.data = [random.randint(1, 100) for _ in range(size)]
         self.metrics = Metrics()
@@ -35,16 +45,25 @@ class SortingAnimator:
         self.anim = FuncAnimation(self.fig, self._update, interval=self.interval, repeat=False)
 
     def _set_speed(self, value: float) -> None:
+        """RO: Ajusteaza intervalul de animatie.
+        EN: Adjust animation interval.
+        """
         self.interval = int(value)
         self.anim.event_source.interval = self.interval
 
     def _randomize(self, _event) -> None:
+        """RO: Reface datele si metricle pentru o noua rulare.
+        EN: Rebuild data and metrics for a new run.
+        """
         self.data = [random.randint(1, 100) for _ in range(self.size)]
         self.metrics = Metrics()
         self.frames = list(bubble_sort(self.data, self.metrics))
         self.index = 0
 
     def _update(self, _frame) -> None:
+        """RO: Deseneaza frame-ul curent si actualizeaza metricle.
+        EN: Draw current frame and update metrics.
+        """
         if self.index >= len(self.frames):
             return
         arr = self.frames[self.index]
@@ -54,4 +73,7 @@ class SortingAnimator:
         self.index += 1
 
     def show(self) -> None:
+        """RO: Afiseaza fereastra Matplotlib.
+        EN: Show the Matplotlib window.
+        """
         plt.show()

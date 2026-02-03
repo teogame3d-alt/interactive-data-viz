@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+"""RO: Demo complet: pipeline de curatare + viz + algoritmi.
+EN: Full demo: cleaning pipeline + visualizations + algorithms.
+"""
+
 from pathlib import Path
 import random
 
@@ -14,6 +18,9 @@ from .viz.tree_visualizer import draw_tree
 
 
 def main() -> None:
+    """RO: Ruleaza toate modulele pentru demo end-to-end.
+    EN: Run all modules for an end-to-end demo.
+    """
     base = Path(__file__).resolve().parents[2]
     data_path = base / "data" / "demo_students.csv"
 

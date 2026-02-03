@@ -33,3 +33,7 @@ See `docs/DECISIONS.md`.
 - Automatic report generation (markdown + chart)
 - Interactive plots with cursor inspection
 - Algorithm visualizer with metrics
+
+## Data
+- \\data/demo_students.csv\\ contains synthetic demo records (no real personal data).
+
