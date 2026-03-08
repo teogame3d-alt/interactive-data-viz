@@ -42,7 +42,14 @@ class SortingAnimator:
         self.button = Button(self.ax_button, "Randomize")
         self.button.on_clicked(self._randomize)
 
-        self.anim = FuncAnimation(self.fig, self._update, interval=self.interval, repeat=False)
+        # Avoid unbounded frame cache warnings for dynamic frame counts.
+        self.anim = FuncAnimation(
+            self.fig,
+            self._update,
+            interval=self.interval,
+            repeat=False,
+            cache_frame_data=False,
+        )
 
     def _set_speed(self, value: float) -> None:
         """RO: Ajusteaza intervalul de animatie.

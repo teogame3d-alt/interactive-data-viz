@@ -7,7 +7,7 @@ EN: Basic BST operations (insert/inorder/etc).
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(eq=False)
 class Node:
     """RO: Nod BST simplu.
     EN: Simple BST node.
