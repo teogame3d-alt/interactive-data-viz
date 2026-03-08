@@ -42,7 +42,7 @@ python -m venv .venv
 - `viz/`: interactive plots + algorithm visualizations
 - `algorithms/`: sorting + BST + metrics
 
-## Demo (Employer)
+## Demo Flow
 1. Run the app to generate the cleaning report and open the interactive charts.
 2. Explore a chart point with the cursor to show exact values.
 3. Open the algorithm visualizer and compare metrics.
@@ -57,3 +57,4 @@ See `docs/DECISIONS.md`.
 
 ## Data
 - `data/demo_students.csv` contains synthetic demo records (no real personal data).
+
