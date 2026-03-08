@@ -5,7 +5,9 @@ and algorithm visualizations.
 
 [![CI](https://github.com/teogame3d-alt/interactive-data-viz/actions/workflows/ci.yml/badge.svg)](https://github.com/teogame3d-alt/interactive-data-viz/actions/workflows/ci.yml)
 
-![Demo](docs/images/viz_demo.png)
+![Interactive Chart 1](docs/images/grafic1.png)
+![Interactive Chart 2](docs/images/grafic2.png)
+![Interactive Chart 3](docs/images/grafic3.png)
 
 ## Problem
 Data projects often lack a reproducible path from raw inputs to trustworthy visuals.
