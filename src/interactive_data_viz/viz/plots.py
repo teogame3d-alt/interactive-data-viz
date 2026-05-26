@@ -36,10 +36,10 @@ def scatter_with_cursor(df: pd.DataFrame, x: str, y: str) -> None:
 def save_quality_dashboard(df: pd.DataFrame, out_path: Path) -> Path:
     """Save a polished static dashboard used by the public README screenshots.
 
-    The interactive chart is excellent for live exploration, but a recruiter
-    reviewing GitHub first needs a deterministic image. This helper renders the
-    same data story as a stable PNG: grade distribution, average by group, and
-    a compact data-quality summary.
+    The interactive chart is useful for live exploration, while the exported
+    image gives reviewers a deterministic artifact. This helper renders the same
+    data story as a stable PNG: grade distribution, average by group, and a
+    compact data-quality summary.
     """
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

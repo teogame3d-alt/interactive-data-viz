@@ -1,4 +1,4 @@
-# Mentor Notes
+# Engineering Notes
 
 ## Why this project exists
 I built this as an end-to-end data workflow demo: validation, cleaning, reporting, and visual explanation.

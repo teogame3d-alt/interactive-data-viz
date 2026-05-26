@@ -59,6 +59,6 @@ See `docs/DECISIONS.md`.
 - `data/demo_students.csv` contains synthetic demo records (no real personal data).
 
 
-## Mentor Notes
-See docs/MENTOR_NOTES.md for architecture rationale, tradeoffs, and project evolution notes.
+## Engineering Notes
+See docs/ENGINEERING_NOTES.md for architecture rationale, tradeoffs, and project evolution notes.
 
