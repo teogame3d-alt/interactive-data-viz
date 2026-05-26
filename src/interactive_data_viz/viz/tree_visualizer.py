@@ -1,15 +1,21 @@
-from __future__ import annotations
-
 """RO: Vizualizare simpla pentru un arbore BST.
 EN: Simple visualization for a BST.
 """
+
+from __future__ import annotations
 
 import matplotlib.pyplot as plt
 
 from ..algorithms.bst import Node
 
 
-def _layout(node: Node | None, x: float, y: float, dx: float, positions: dict[Node, tuple[float, float]]):
+def _layout(
+    node: Node | None,
+    x: float,
+    y: float,
+    dx: float,
+    positions: dict[Node, tuple[float, float]],
+) -> None:
     """RO: Calculeaza recursiv coordonatele fiecarui nod.
     EN: Recursively compute node positions.
     """
@@ -31,8 +37,14 @@ def draw_tree(root: Node | None) -> None:
 
     fig, ax = plt.subplots()
     for node, (x, y) in positions.items():
-        ax.text(x, y, str(node.value), ha="center", va="center",
-                bbox=dict(boxstyle="round", facecolor="lightblue"))
+        ax.text(
+            x,
+            y,
+            str(node.value),
+            ha="center",
+            va="center",
+            bbox=dict(boxstyle="round", facecolor="lightblue"),
+        )
         if node.left:
             lx, ly = positions[node.left]
             ax.plot([x, lx], [y, ly], color="gray")

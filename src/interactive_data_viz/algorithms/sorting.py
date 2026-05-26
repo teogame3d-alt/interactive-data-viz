@@ -1,15 +1,15 @@
-from __future__ import annotations
-
 """RO: Algoritmi de sortare cu generator pentru animatii.
 EN: Sorting algorithms using generators for animation.
 """
 
-from typing import Generator, List
+from __future__ import annotations
+
+from collections.abc import Generator
 
 from .metrics import Metrics
 
 
-def bubble_sort(data: List[int], metrics: Metrics) -> Generator[List[int], None, None]:
+def bubble_sort(data: list[int], metrics: Metrics) -> Generator[list[int], None, None]:
     """RO: Bubble sort care emite stari intermediare.
     EN: Bubble sort that yields intermediate states.
     """

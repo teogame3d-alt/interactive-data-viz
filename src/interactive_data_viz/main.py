@@ -1,19 +1,19 @@
-from __future__ import annotations
-
 """RO: Demo complet: pipeline de curatare + viz + algoritmi.
 EN: Full demo: cleaning pipeline + visualizations + algorithms.
 """
 
-from pathlib import Path
-import random
+from __future__ import annotations
 
-from .cleaning_pipeline.loader import load_data
-from .cleaning_pipeline.validator import DataContract, validate_schema
+import random
+from pathlib import Path
+
+from .algorithms.bst import count_nodes, height, inorder, insert, sum_tree
 from .cleaning_pipeline.cleaner import clean_missing
+from .cleaning_pipeline.loader import load_data
 from .cleaning_pipeline.report import generate_report
+from .cleaning_pipeline.validator import DataContract, validate_schema
 from .viz.plots import save_quality_dashboard, scatter_with_cursor
 from .viz.sorting_animator import SortingAnimator
-from .algorithms.bst import insert, inorder, height, count_nodes, sum_tree
 from .viz.tree_visualizer import draw_tree
 
 

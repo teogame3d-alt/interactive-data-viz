@@ -1,13 +1,14 @@
-from __future__ import annotations
-
 """RO: Ploturi interactive cu mplcursors pentru inspectare rapida.
 EN: Interactive plots with mplcursors for quick inspection.
 """
 
+from __future__ import annotations
+
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import mplcursors
 import pandas as pd
-from pathlib import Path
 
 
 def scatter_with_cursor(df: pd.DataFrame, x: str, y: str) -> None:

@@ -1,8 +1,8 @@
-from __future__ import annotations
-
 """RO: Operatii de baza pentru un BST (insert/inorder/etc).
 EN: Basic BST operations (insert/inorder/etc).
 """
+
+from __future__ import annotations
 
 from dataclasses import dataclass
 
@@ -13,8 +13,8 @@ class Node:
     EN: Simple BST node.
     """
     value: int
-    left: "Node | None" = None
-    right: "Node | None" = None
+    left: Node | None = None
+    right: Node | None = None
 
 
 def insert(root: Node | None, value: int) -> Node:

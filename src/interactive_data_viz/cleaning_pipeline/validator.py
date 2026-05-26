@@ -1,10 +1,11 @@
-from __future__ import annotations
-
 """RO: Validarea schemelor pe baza unui contract de date.
 EN: Schema validation based on a data contract.
 """
 
+from __future__ import annotations
+
 from dataclasses import dataclass
+
 import pandas as pd
 
 

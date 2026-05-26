@@ -28,6 +28,17 @@ Python, pandas, NumPy, matplotlib, mplcursors, pytest, GitHub Actions.
 - Separated modules for ETL, analytics, and algorithms
 - Test coverage for both pipeline and algorithm logic
 
+## Proof of Work
+- The cleaning pipeline validates synthetic input data before charts are generated.
+- Tests cover data-cleaning behavior and algorithm logic.
+- The exported dashboard screenshot provides a stable review artifact for GitHub.
+- Interactive charts use cursor inspection so values can be checked instead of only viewed visually.
+
+## Difficult Parts / Tradeoffs
+- Interactive charts are useful locally, but GitHub needs static screenshots; the project supports both.
+- The dataset is synthetic to avoid privacy issues, so the focus is on process quality rather than business claims.
+- Validation is kept explicit before visualization because clean-looking charts can still hide bad data.
+
 ## Quick Start
 ```bash
 python -m venv .venv

@@ -1,8 +1,8 @@
-from __future__ import annotations
-
 """RO: Animatie interactiva pentru bubble sort.
 EN: Interactive animation for bubble sort.
 """
+
+from __future__ import annotations
 
 import random
 
@@ -74,9 +74,11 @@ class SortingAnimator:
         if self.index >= len(self.frames):
             return
         arr = self.frames[self.index]
-        for rect, h in zip(self.bar, arr):
+        for rect, h in zip(self.bar, arr, strict=False):
             rect.set_height(h)
-        self.ax.set_xlabel(f"Comparisons: {self.metrics.comparisons} Swaps: {self.metrics.swaps}")
+        self.ax.set_xlabel(
+            f"Comparisons: {self.metrics.comparisons} Swaps: {self.metrics.swaps}"
+        )
         self.index += 1
 
     def show(self) -> None:

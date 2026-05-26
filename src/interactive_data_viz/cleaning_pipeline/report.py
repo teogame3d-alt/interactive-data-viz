@@ -1,12 +1,13 @@
-from __future__ import annotations
-
 """RO: Genereaza raport Markdown + grafic pentru valori lipsa.
 EN: Generate Markdown report + missing-values chart.
 """
 
+from __future__ import annotations
+
 from pathlib import Path
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def generate_report(df: pd.DataFrame, out_dir: Path) -> Path:

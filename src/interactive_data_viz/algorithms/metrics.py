@@ -1,8 +1,8 @@
-from __future__ import annotations
-
 """RO: Metrice simple pentru comparatii si swap-uri.
 EN: Simple metrics for comparisons and swaps.
 """
+
+from __future__ import annotations
 
 from dataclasses import dataclass
 

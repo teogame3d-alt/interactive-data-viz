@@ -1,6 +1,6 @@
+from interactive_data_viz.algorithms.bst import inorder, insert
 from interactive_data_viz.algorithms.metrics import Metrics
 from interactive_data_viz.algorithms.sorting import bubble_sort
-from interactive_data_viz.algorithms.bst import insert, inorder
 
 
 def test_bubble_sort() -> None:

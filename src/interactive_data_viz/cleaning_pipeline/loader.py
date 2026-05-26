@@ -1,10 +1,11 @@
-from __future__ import annotations
-
 """RO: Incarcarea dataset-ului din CSV.
 EN: Load dataset from CSV.
 """
 
+from __future__ import annotations
+
 from pathlib import Path
+
 import pandas as pd
 
 

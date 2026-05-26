@@ -1,8 +1,8 @@
-from __future__ import annotations
-
 """RO: Curata valorile lipsa cu strategii simple.
 EN: Clean missing values with simple strategies.
 """
+
+from __future__ import annotations
 
 import pandas as pd
 
