@@ -7,6 +7,9 @@ and algorithm visualizations.
 
 ![Interactive Data Viz dashboard](docs/images/viz_demo.png)
 
+**Status:** working Python project with reproducible cleaning, interactive charts, algorithm views,
+tests, and CI. See [the changelog](CHANGELOG.md) for the latest update.
+
 ## Problem
 Data projects often lack a reproducible path from raw inputs to trustworthy visuals.
 
@@ -21,7 +24,7 @@ Python, pandas, NumPy, matplotlib, mplcursors, pytest, GitHub Actions.
 - Reproducible cleaning with validation
 - Interactive analysis with cursor inspection
 - Visual explanation of algorithm behavior
-- Static dashboard export for public portfolio review
+- Static dashboard export for technical review
 
 ## Engineering Focus
 - Data contracts and validation before visualization
